@@ -11,14 +11,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var buttonCount = 0
+ //   var buttonCount = 0
     
     @IBOutlet weak var myLabel: UILabel!
-    
+    @IBOutlet weak var topTextField: UITextField!
+    @IBOutlet weak var bottomTextField: UITextField!
     
     @IBAction func btnTapped(_ sender: Any) {
     
-        buttonCount = buttonCount + 1
+        
+        var sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
+        
+        myLabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)"
+        
+    /*    buttonCount += 1
         if buttonCount >= 10 {
         view.backgroundColor = UIColor.red
         myLabel.text = "It's Red Baby!"
@@ -26,8 +32,11 @@ class ViewController: UIViewController {
         if buttonCount >= 15 {
             view.backgroundColor = UIColor.green
             myLabel.text = "It's Green Baby!"
-        }
-    }
+     
+           }
+*/
+}
+
     
     
     
