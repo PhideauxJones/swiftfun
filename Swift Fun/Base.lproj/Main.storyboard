@@ -49,12 +49,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LYZ-rM-loT">
+                                <rect key="frame" x="163" y="321" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="K3s-6a-0Z5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Ht-HL-jIq"/>
                             <constraint firstItem="K3s-6a-0Z5" firstAttribute="top" secondItem="8vC-vb-Dbe" secondAttribute="bottom" constant="21" id="KYV-pM-GIB"/>
+                            <constraint firstItem="LYZ-rM-loT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lco-5b-MKJ"/>
                             <constraint firstItem="sTf-uI-RxY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q6j-Wi-UAb"/>
+                            <constraint firstItem="LYZ-rM-loT" firstAttribute="top" secondItem="K3s-6a-0Z5" secondAttribute="bottom" constant="20" id="ZNm-cS-Klg"/>
                             <constraint firstItem="3F8-yr-LFS" firstAttribute="top" secondItem="K3s-6a-0Z5" secondAttribute="bottom" constant="94.666666666666686" id="cKq-ke-nYU"/>
                             <constraint firstItem="3F8-yr-LFS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="evg-rk-qQl"/>
                             <constraint firstItem="3F8-yr-LFS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iR8-Yg-1a5"/>
@@ -64,6 +69,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="LYZ-rM-loT" id="yOE-SS-GQg"/>
                         <outlet property="bottomTextField" destination="K3s-6a-0Z5" id="Dz8-h7-ySH"/>
                         <outlet property="myLabel" destination="3F8-yr-LFS" id="dry-BP-6K0"/>
                         <outlet property="topTextField" destination="8vC-vb-Dbe" id="g9k-i9-RsJ"/>
